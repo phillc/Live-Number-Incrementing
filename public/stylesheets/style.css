@@ -14,3 +14,11 @@ body {
 #status_connecting {
   color: greenyellow;
 }
+
+.trigger {
+  font-size: 3em;
+}
+
+.from_self {
+  color: green;
+}

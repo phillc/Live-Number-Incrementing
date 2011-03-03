@@ -3,7 +3,21 @@ div
   p#status_disconnected(style="display: none;") disconnected
   p#status_failed(style="display: none;") failed
   p#status_connecting(style="display: none;") connecting
+
+p the number is
+  span#current_number= current_number
+p
+  button(id='trigger_100', class="trigger", disabled='disabled') Raise Number by 100
+p
+  button(id='trigger_200', class="trigger", disabled='disabled') Raise Number by 200
   
+ul#history
+
+script(type="application/javascript")
+  | window.user_id = #{user_id};
+  | window.current_number = #{current_number};
+  | window.last_seen_raise = 0;
+
 script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", type="application/javascript")
 script(src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js", type="application/javascript")
 script(src="/socket.io/socket.io.js", type="application/javascript")
