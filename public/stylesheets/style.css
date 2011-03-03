@@ -2,3 +2,15 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
+#status_connected {
+  color: green;
+}
+
+#status_disconnected, #status_failed {
+  color: red;
+}
+
+#status_connecting {
+  color: greenyellow;
+}

@@ -1,0 +1,10 @@
+div
+  p#status_connected(style="display: none;") connected
+  p#status_disconnected(style="display: none;") disconnected
+  p#status_failed(style="display: none;") failed
+  p#status_connecting(style="display: none;") connecting
+  
+script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", type="application/javascript")
+script(src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js", type="application/javascript")
+script(src="/socket.io/socket.io.js", type="application/javascript")
+script(src="/javascripts/game.coffee", type="text/coffeescript")
