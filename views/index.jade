@@ -1,2 +1,7 @@
 h1= title
 p Welcome to #{title}
+
+ul
+- for (var i=1; i <= 25; i++)
+  li
+    a(href=('/join/' + i))= "Join as User #" + i
